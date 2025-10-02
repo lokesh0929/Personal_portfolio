@@ -1,4 +1,4 @@
-/* ---------- Global Styles ---------- */
+/*-Global Styles - */
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 :root{
@@ -21,7 +21,7 @@ body{
 }
 .wrapper{ max-width: 1100px; margin: 0 auto; padding: 24px; }
 
-/* ---------- Header ---------- */
+ /* Header -*/ 
 .header{
   position: sticky; top: 0; z-index: 10;
   backdrop-filter: blur(8px);
@@ -197,5 +197,6 @@ button:hover{ transform: translateY(-1px); }
 }
 .form-row { margin-bottom: 12px; }
 
-/* ---------- Footer ---------- */
+/* - Footer -*/
 footer{ color: var(--muted); text-align:center; padding:20px 0 40px; }
+
