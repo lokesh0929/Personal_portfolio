@@ -1,48 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Home — Lokesh Chetla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <table width="100%" cellspacing="0" cellpadding="8">
-      <tr>
-        <td>
-          <p><b>Lokesh Chetla</b> / Graduate Student</p>
-        </td>
-        <td align="right">
-          <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About</a> |
-            <a href="work.html">Work</a> |
-            <a href="contact.html">Contact</a>
-          </nav>
-        </td>
-      </tr>
-    </table>
-    <hr>
+  <header class="header">
+    <div class="wrapper" style="display:flex;justify-content:space-between;align-items:center;">
+      <p class="brand">Lokesh Chetla / Graduate Student</p>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <table width="100%" cellpadding="15">
-      <tr valign="middle">
-        <!-- Left side-->
-        <td width="30%" align="center">
-          <img src="C:\Users\Lokesh_Chetla\Downloads\Lokesh Chetla.JPG" alt="Lokesh Chetla" width="320" height="220">
-        </td>
-        <!-- Right side-->
-        <td>
-          <h2>Hello, I’m Lokesh 👋</h2>
+  <main class="wrapper">
+    <section class="panel">
+      <div class="hero">
+        <img class="avatar" src="Lokesh Chetla.JPG" alt="Lokesh Chetla portrait" />
+        <div>
+          <h1 class="typewriter">Hello, I’m Lokesh 👋</h1>
           <p>
-            Graduate student in Computer Science at UMass Lowell.<br>
-            Interested in AI, ML, cloud computing, and full-stack development.<br>
-            This portfolio highlights my work experience, projects, and personal interests.
+            Graduate student in Computer Science at UMass Lowell.<br />
+            Interested in AI, ML, cloud computing, and full-stack development.<br />
+            This portfolio highlights my work, projects, and personal interests.
           </p>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="wrapper">© <span id="year"></span> Lokesh Chetla</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
